@@ -25,15 +25,15 @@
 ---
 
 ## 🛠️ Instalasi & Penggunaan
-bash```
+```bash
 pkg update && pkg upgrade
 pkg install python
 pkg install git
 pkg install openssl-tool
 pip install requests
-git clone https://github.com/vsa-html/smash.git
-cd smash
+```
+---
 
 ## 📱 Jalankan
-bash```
-python main.py
+```bash
+equests
