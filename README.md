@@ -24,13 +24,18 @@
 
 ---
 
-## 🛠️ Instalasi
+## 🛠️ Instalasi Keperluan
 ```bash
 pkg update && pkg upgrade
 pkg install python
 pkg install git
 pkg install openssl-tool
 pip install requests
+```
+---
+
+## 📁 Instalasi Git
+```bash
 git clone https://github.com/vsa-html/smash.git
 ```
 ---
