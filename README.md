@@ -24,19 +24,56 @@ Penulis tidak bertanggung jawab atas segala bentuk penyalahgunaan alat ini.
 
 ---
 
-## 🆕 Update Terbaru — Fitur CEK WEB ##
+## 🆕 Update Terbaru ##
 
-Sebelum melakukan serangan, kini tersedia menu CEK WEB untuk menganalisis target terlebih dahulu. Fitur ini membantu pengguna memahami karakteristik target dan memilih metode yang paling efektif.
+Menggantikan method **UDP FLOOD** yang lama dengan yang baru, bernama **UDP FLOOD ULTIMATE**
+
+Kelebihan **UDP FLOOD ULTIMATE** sebagai berikut:
+
+##
+
+1. Payload Maksimal (65.500 bytes)
+2. Burst 200 Paket per Loop
+3. Socket Buffer 16MB
+4. Pre-Generated Payload
+5. Low Thread, High Impact
+6. Bypass Rate Limiting
+7. Amplifikasi Bandwidth
+8. Bisa Dijalankan Tanpa Root
+9. Efek Instan
+10. Fokus ke Bandwidth
+
+##
+
+***KESIMPULAN***
+
+UDP Flood Ultimate = Senjata pamungkas SMASH XSO.
+
+• **Brutal** — Bandwidth target abis dalam detik
+
+• **Efisien** — Thread sedikit, efek besar
+
+• **Ringan** — HP gak lag
+
+• **Cepat** — Efek instan
+
+• **Simple** — Gak butuh root
+
+• **Universal** — Bisa ke port UDP apa aja
+
+##
+
+Sebelum melakukan serangan, kini tersedia menu **CEK WEB** untuk menganalisis target terlebih dahulu. Fitur ini membantu pengguna memahami karakteristik target dan memilih metode yang paling efektif.
 
 Fitur CEK WEB meliputi:
 
-· **🔍 Deteksi Proteksi** — Mengidentifikasi apakah target dilindungi oleh Cloudflare, Vercel, Nginx, Apache, atau tanpa proteksi.
+• **🔍 Deteksi Proteksi** — Mengidentifikasi apakah target dilindungi oleh Cloudflare, Vercel, Nginx, Apache, atau tanpa proteksi.
 
-· **🌐 Analisis HTTP** — Menampilkan status code, server header, dan content-type target.
+• **🌐 Analisis HTTP** — Menampilkan status code, server header, dan content-type target.
 
-· **📡 Scan Port UDP** — Memeriksa port-port UDP penting seperti DNS (53), NTP (123), Memcached (11211), SNMP (161), LDAP (389), dan SSDP (1900).
+• **📡 Scan Port UDP** — Memeriksa port-port UDP penting seperti DNS (53), NTP (123), Memcached (11211), SNMP (161), LDAP (389), dan SSDP (1900).
 
-· **💡 Rekomendasi Method** — Memberikan saran metode serangan yang paling cocok berdasarkan hasil analisis.
+• **💡 Rekomendasi Method** — Memberikan saran metode serangan yang paling cocok berdasarkan hasil analisis.
 
 Dengan fitur ini, pengguna dapat melakukan rekognisi awal sebelum menentukan strategi pengujian — menjadikan SMASH XSO bukan sekadar alat serang, tapi juga alat analisis keamanan.
 
@@ -73,57 +110,59 @@ python main.py
 
 ## 📦 Persyaratan ##
 
-· Modul `requests`
-· (Opsional) Hak akses root untuk ICMP Flood.
-· Aplikasi `Termux`
+• Modul `requests`
+
+• (Opsional) Hak akses root untuk ICMP Flood.
+
+• Aplikasi `Termux`
 
 ----
 
 ## 📊 Peringkat Method ##
 
-1️⃣ UDP Flood Ultimate `⭐⭐⭐⭐⭐`
+1. ***UDP Flood Ultimate*** `⭐⭐⭐⭐⭐`
 
 Paling brutal buat server yang gak pake proteksi. Cukup 800–1200 thread, server langsung lumpuh dalam hitungan detik.
 
----
+##
 
-2️⃣ DNS Amplification `⭐⭐⭐⭐½`
+2. ***DNS Amplification*** `⭐⭐⭐⭐½`
 
 Efek besar kalo target pake DNS. Bisa amplify traffic 30–60x lipat.
 
----
+##
 
-3️⃣ ICMP Flood `⭐⭐⭐⭐`
+3. ***ICMP Flood*** `⭐⭐⭐⭐`
 
 Bikin server kewalahan nanganin ping terus-menerus. Butuh root.
 
----
+##
 
-4️⃣ TCP SYN Flood `⭐⭐⭐⭐`
+4. ***TCP SYN Flood*** `⭐⭐⭐⭐`
 
 Bikin server kehabisan koneksi (half-open connections).
 
----
+##
 
-5️⃣ SSL Renegotiation `⭐⭐⭐½`
+5. ***SSL Renegotiation*** `⭐⭐⭐½`
 
 Lumayan buat server HTTPS, tapi butuh resource lebih.
 
----
+##
 
-6️⃣ HTTP Flood `⭐⭐⭐`
+6. ***HTTP Flood*** `⭐⭐⭐`
 
 Sangat ganas buat web server. Memakan resource CPU & RAM target.
 
----
+##
 
-7️⃣ HTTP POST Flood `⭐⭐⭐`
+7. ***HTTP POST Flood*** `⭐⭐⭐`
 
 Mirip HTTP Flood, tapi lebih berat di sisi server.
 
----
+##
 
-8️⃣ Slowloris ¢⭐⭐½`
+8. ***Slowloris*** `⭐⭐½`
 
 Halus tapi mematikan. Bikin server kehabisan thread.
 
@@ -131,17 +170,17 @@ Halus tapi mematikan. Bikin server kehabisan thread.
 
 # 🎯 Rekomendasi Penggunaan #
 
-Target Method yang gw saranin:
+Method yang gw saranin:
 
-Web biasa **UDP Flood Ultimate** (nomor 1)
+Web biasa `UDP Flood Ultimate` (nomor 1)
 
-Kalo web pake Cloudflare **HTTP Flood** (nomor 6)
+Kalo web pake Cloudflare `HTTP Flood` (nomor 6)
 
-Servernya pake HTTPS **SSL Renegotiation** (nomor 5)
+Servernya pake HTTPS `SSL` `Renegotiation` (nomor 5)
 
-Servernya lemah **Slowloris** (nomor 8)
+Servernya lemah `Slowloris` (nomor 8)
 
-Server VPS biasa **DNS Amplification** (nomor 2)
+Server VPS biasa `DNS Amplification` (nomor 2)
 
 
 ---
@@ -151,5 +190,3 @@ Server VPS biasa **DNS Amplification** (nomor 2)
 Script ini dibuat semata-mata untuk keperluan edukasi keamanan siber dan pengujian penetrasi dengan izin.
 Penggunaan untuk menyerang, merusak, atau mengganggu layanan orang lain tanpa izin adalah melanggar hukum di banyak negara, termasuk Indonesia.
 Penulis dan kontributor tidak bertanggung jawab atas segala konsekuensi yang timbul dari penyalahgunaan alat ini.
-
----
